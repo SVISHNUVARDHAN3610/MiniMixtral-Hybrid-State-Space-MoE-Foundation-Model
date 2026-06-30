@@ -1,10 +1,10 @@
-# Transmamba (MiniMixtral): Hybrid State-Space MoE Foundation Model
+# MiniMixtral: Hybrid State-Space MoE Foundation Model
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
-**Transmamba** (implemented here as *MiniMixtral*) is a high-performance, from-scratch foundation model architecture designed for resource-constrained pretraining environments (e.g., Kaggle Dual T4 GPUs). It fuses the long-context retrieval capabilities of traditional Transformers with the linear-time sequence modeling of State Space Models (Mamba), scaled via a Block-Sparse Mixture-of-Experts (MoE) routing paradigm.
+**MiniMixtral**  is a high-performance, from-scratch foundation model architecture designed for resource-constrained pretraining environments (e.g., Kaggle Dual T4 GPUs). It fuses the long-context retrieval capabilities of traditional Transformers with the linear-time sequence modeling of State Space Models (Mamba), scaled via a Block-Sparse Mixture-of-Experts (MoE) routing paradigm.
 
 To achieve 100% compute saturation and bypass severe I/O bottlenecks during training, this repository introduces a **Zero-Copy Asynchronous Data Engine** alongside a novel **Tri-Engine Hybrid Optimizer** that routes structural parameters to specialized mathematical backends (Muon, Sophia-G, and AdamW).
 
